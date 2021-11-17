@@ -42,23 +42,26 @@ while (True):
     """)
     strChoice = str(input("Which option would you like to perform? [1 to 5] - "))
     print()  # adding a new line for looks
-    # Step 3 - Show the current items in the table
+    # Step 3 - Option 1 selected
+    # Show the current items in the table
     if strChoice.strip() == '1':
         print('Current Data:')
         for row in lstTable:
             print(row['Task'] + ', ' + row['Priority'].strip())
         continue
 
-    # Step 4 - Add a new item to the list/Table
+    # Step 4 - Option 2 selected
+    # Add a new item to the list/Table
     elif strChoice.strip() == '2':
-        strTask = input('Please enter task: ')
+        strTask = input('Please enter a task: ')
         strPriority = input('Please assign a priority for this task ["high", "medium", "low"]: ')
         dicRow = {'Task': strTask, 'Priority': strPriority}
         lstTable.append(dicRow)
         print('Your new task has been added!!')
         continue
 
-    # Step 5 - Remove a new item from the list/Table
+    # Step 5 - Option 3 selected
+    # Remove a new item from the list/Table
     elif strChoice.strip() == '3':
         print('Your current task list is:\n')
         for row in lstTable:
@@ -70,7 +73,8 @@ while (True):
                 print('\n' + strRemove + ' has been removed from your task list.')
         continue
 
-    # Step 6 - Save tasks to the ToDoToDoList.txt file
+    # Step 6 - Option 4 selected
+    # Save tasks to the ToDoToDoList.txt file
     elif strChoice.strip() == '4':
         openFile = open(objFile, 'w')
         for row in lstTable:
@@ -79,7 +83,8 @@ while (True):
         print('Your data has been saved!\n')
         continue
 
-    # Step 7 - Exit program
+    # Step 7 - Option 5 selected
+    # Exit program
     elif strChoice.strip() == '5':
         print('See you next time!!')
         break  # and Exit the program
