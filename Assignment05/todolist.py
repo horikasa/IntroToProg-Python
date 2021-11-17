@@ -7,6 +7,7 @@
 # ChangeLog (Who,When,What):
 # RRoot,1.1.2030,Created started script
 # HOrikasa, 11/15/2021, Added code to complete assignment 5
+# HOrikasa, 11/16/2021, minor changes to pseudo code
 # ------------------------------------------------------------------------ #
 
 # -- Data -- #
